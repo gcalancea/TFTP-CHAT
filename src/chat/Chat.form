@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="chat.Chat">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="823" height="605"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <splitpane id="a549b" binding="message">
+        <constraints border-constraint="South"/>
+        <properties>
+          <continuousLayout value="false"/>
+          <dividerLocation value="650"/>
+          <dividerSize value="9"/>
+          <enabled value="true"/>
+          <font name="Monaco" size="12" style="0"/>
+          <foreground color="-1854994"/>
+          <oneTouchExpandable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ff8e6" class="javax.swing.JButton" binding="sendButton" default-binding="true">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="12" style="0"/>
+              <foreground color="-5738770"/>
+              <text value="Send"/>
+            </properties>
+          </component>
+          <component id="fa6ef" class="javax.swing.JTextField" binding="inputField">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="12" style="0"/>
+              <foreground color="-8823314"/>
+              <text value="Type you message here"/>
+            </properties>
+          </component>
+        </children>
+      </splitpane>
+      <vspacer id="f35c7">
+        <constraints border-constraint="West"/>
+      </vspacer>
+      <hspacer id="6904">
+        <constraints border-constraint="North"/>
+      </hspacer>
+      <vspacer id="84ec9">
+        <constraints border-constraint="East"/>
+      </vspacer>
+      <splitpane id="74a33">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <continuousLayout value="false"/>
+          <enabled value="true"/>
+          <orientation value="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <splitpane id="846f">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <orientation value="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <splitpane id="51dd9">
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties>
+                  <continuousLayout value="true"/>
+                  <dividerLocation value="54"/>
+                  <enabled value="true"/>
+                  <foreground color="-9858885"/>
+                  <orientation value="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b544d" class="javax.swing.JLabel" binding="available">
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties>
+                      <enabled value="true"/>
+                      <font name="Monaco" size="11"/>
+                      <foreground color="-5738770"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Available Friends"/>
+                    </properties>
+                  </component>
+                  <component id="1e1f3" class="javax.swing.JList" binding="friendList">
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties>
+                      <font name="Monaco" size="12" style="0"/>
+                      <foreground color="-8823314"/>
+                      <model/>
+                      <selectionBackground color="-1854994"/>
+                      <selectionForeground color="-8823314"/>
+                    </properties>
+                  </component>
+                </children>
+              </splitpane>
+              <scrollpane id="cfec0">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="d34bf" class="javax.swing.JList" binding="chatMessages">
+                    <constraints/>
+                    <properties>
+                      <font name="Monaco" size="12" style="0"/>
+                      <foreground color="-8823314"/>
+                      <model/>
+                      <selectionBackground color="-1854994"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </splitpane>
+          <component id="5e7e6" class="javax.swing.JList" binding="serverAnswers">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="12" style="0"/>
+              <foreground color="-1140798"/>
+              <model>
+                <item value="File uploaded"/>
+                <item value="File downloaded"/>
+              </model>
+              <selectionBackground color="-1854994"/>
+              <selectionForeground color="-8823314"/>
+            </properties>
+          </component>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>
