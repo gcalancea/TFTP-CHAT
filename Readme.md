@@ -1,6 +1,6 @@
-#TFTP Chat Room
+# TFTP Chat Room
 
-###Project description:
+### Project description:
 
 Several chat clients will be able to chat between themselves and send files to 
 one another through the chat server, which communicates with a TFTP client and a
@@ -25,7 +25,7 @@ server. When a client connects, it creates a new thread to communicate with him
 shows the current progress for upload & download and the available files on server
 
 
-###Main functionality and commands:
+### Main functionality and commands:
 
 - *send messages* between clients as a group chat
 
@@ -51,7 +51,7 @@ shows the current progress for upload & download and the available files on serv
         
         
         
-###How to start the application
+### How to start the application
 
  - compile the project
  
